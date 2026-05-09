@@ -6,6 +6,9 @@
   "_upm": {
     "changelog": "### Changed\n\n- Packaged the SDK as a Unity Package Manager package for installation via Git URL."
   },
+  "peerDependencies": {
+    "com.google.external-dependency-manager": "1.2.187"
+  },
   "documentationUrl": "https://adapty.io/docs/unity-sdk-overview",
   "licensesUrl": "https://github.com/adaptyteam/AdaptySDK-Unity/blob/main/LICENSE",
   "homepageUrl": "https://github.com/adaptyteam/AdaptySDK-Unity",
