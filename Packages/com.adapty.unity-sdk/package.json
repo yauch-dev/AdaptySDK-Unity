@@ -1,10 +1,10 @@
 {
   "name": "com.adapty.unity-sdk",
-  "version": "3.15.2",
+  "version": "3.17.2",
   "displayName": "Adapty Unity SDK",
   "description": "Unity SDK for Adapty in-app purchases, subscriptions, paywalls, and onboarding flows.",
   "_upm": {
-    "changelog": "### Changed\n\n- Packaged the SDK as a Unity Package Manager package for installation via Git URL."
+    "changelog": "### Changed\n\n- Updated native SDK dependencies and cross-platform contract to 3.17.2."
   },
   "peerDependencies": {
     "com.google.external-dependency-manager": "1.2.187"

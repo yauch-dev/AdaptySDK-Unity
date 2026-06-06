@@ -15,6 +15,7 @@ namespace AdaptySDK {
         internal AdaptyUIUserAction(JSONObject jsonNode) {
             Type = jsonNode.GetAdaptyUIUserActionType("type");
             Value = jsonNode.GetStringIfPresent("value");
+            OpenIn = jsonNode.GetAdaptyWebPresentationIfPresent("open_in");
         }
     }
 }

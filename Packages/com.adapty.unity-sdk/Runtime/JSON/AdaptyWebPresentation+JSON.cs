@@ -18,3 +18,26 @@ namespace AdaptySDK
             };
     }
 }
+
+namespace AdaptySDK.SimpleJSON
+{
+    internal static partial class JSONNodeExtensions
+    {
+        internal static AdaptyWebPresentation GetAdaptyWebPresentation(this JSONNode node) =>
+            GetString(node).ToAdaptyWebPresentation();
+
+        internal static AdaptyWebPresentation GetAdaptyWebPresentation(this JSONNode node, string aKey) =>
+            GetString(node, aKey).ToAdaptyWebPresentation();
+
+        internal static AdaptyWebPresentation? GetAdaptyWebPresentationIfPresent(this JSONNode node, string aKey) =>
+            GetStringIfPresent(node, aKey)?.ToAdaptyWebPresentation();
+
+        private static AdaptyWebPresentation ToAdaptyWebPresentation(this string value) =>
+            value switch
+            {
+                "browser_out_app" => AdaptyWebPresentation.ExternalBrowser,
+                "browser_in_app" => AdaptyWebPresentation.InAppBrowser,
+                _ => throw new Exception($"AdaptyWebPresentation unknown value: {value}"),
+            };
+    }
+}

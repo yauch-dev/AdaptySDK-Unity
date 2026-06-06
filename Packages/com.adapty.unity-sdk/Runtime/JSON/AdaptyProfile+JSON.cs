@@ -18,6 +18,9 @@ namespace AdaptySDK
             ProfileId = jsonNode.GetString("profile_id");
             SegmentId = jsonNode.GetString("segment_hash");
             CustomerUserId = jsonNode.GetStringIfPresent("customer_user_id");
+            AppliedAttributionSources =
+                jsonNode.GetStringListIfPresent("applied_attribution_sources")
+                ?? new List<string>();
             CustomAttributes =
                 jsonNode.GetDictionaryIfPresent("custom_attributes")
                 ?? new Dictionary<string, object>();

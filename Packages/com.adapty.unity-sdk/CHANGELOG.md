@@ -4,6 +4,16 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.17.2] - 2026-06-06
+
+### Changed
+
+- Updated native SDK dependencies and cross-platform contract to 3.17.2.
+
+### Added
+
+- Added profile applied attribution sources and web presentation metadata for open URL UI actions.
+
 ## [3.15.2] - 2026-04-10
 
 ### Changed

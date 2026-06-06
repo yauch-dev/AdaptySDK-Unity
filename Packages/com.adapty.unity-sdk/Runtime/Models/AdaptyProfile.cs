@@ -39,6 +39,11 @@ namespace AdaptySDK
         internal readonly string SegmentId;
 
         /// <summary>
+        /// Identifiers of attribution sources applied to the profile.
+        /// </summary>
+        public readonly IList<string> AppliedAttributionSources;
+
+        /// <summary>
         /// Previously set user custom attributes with <see cref="Adapty.UpdateProfile(AdaptyProfileParameters, Action{AdaptyError})"/> method.
         /// </summary>
         public readonly IDictionary<string, object> CustomAttributes;
@@ -115,6 +120,7 @@ namespace AdaptySDK
             return $"{nameof(ProfileId)}: {ProfileId}, "
                 + $"{nameof(SegmentId)}: {SegmentId}, "
                 + $"{nameof(CustomerUserId)}: {CustomerUserId}, "
+                + $"{nameof(AppliedAttributionSources)}: [{string.Join(", ", AppliedAttributionSources)}], "
                 + $"{nameof(CustomAttributes)}: {customAttributesStr}, "
                 + $"{nameof(AccessLevels)}: {accessLevelsStr}, "
                 + $"{nameof(Subscriptions)}: {subscriptionsStr}, "
