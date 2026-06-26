@@ -1,0 +1,27 @@
+{
+  "name": "com.adapty.unity-sdk",
+  "version": "3.17.0",
+  "displayName": "Adapty Unity SDK",
+  "description": "Unity SDK for Adapty in-app purchases, subscriptions, paywalls, and onboarding flows.",
+  "_upm": {
+    "changelog": "### Changed\n\n- Updated native SDK dependencies and cross-platform contract to 3.17.2."
+  },
+  "peerDependencies": {
+    "com.google.external-dependency-manager": "1.2.187"
+  },
+  "documentationUrl": "https://adapty.io/docs/unity-sdk-overview",
+  "licensesUrl": "https://github.com/adaptyteam/AdaptySDK-Unity/blob/main/LICENSE",
+  "homepageUrl": "https://github.com/adaptyteam/AdaptySDK-Unity",
+  "keywords": [
+    "adapty",
+    "subscriptions",
+    "in-app purchases",
+    "paywalls",
+    "onboarding"
+  ],
+  "author": {
+    "name": "Adapty",
+    "email": "support@adapty.io",
+    "url": "https://adapty.io"
+  }
+}
