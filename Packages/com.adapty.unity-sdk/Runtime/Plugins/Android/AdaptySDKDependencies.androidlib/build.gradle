@@ -1,0 +1,21 @@
+apply plugin: 'com.android.library'
+
+def unityLibraryAndroid = project(':unityLibrary').android
+
+dependencies {
+    api 'io.adapty.internal:crossplatform:3.17.2'
+    api 'io.adapty:android-sdk:3.17.2'
+    api 'io.adapty:android-ui:3.17.2'
+}
+
+android {
+    namespace "io.adapty.unity.dependencies"
+
+    compileSdk unityLibraryAndroid.compileSdk
+    buildToolsVersion = unityLibraryAndroid.buildToolsVersion
+
+    defaultConfig {
+        minSdk unityLibraryAndroid.defaultConfig.minSdk
+        targetSdk unityLibraryAndroid.defaultConfig.targetSdk
+    }
+}
