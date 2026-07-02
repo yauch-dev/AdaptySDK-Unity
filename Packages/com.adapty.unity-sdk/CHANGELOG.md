@@ -13,5 +13,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Migrated the SDK to a Unity Package Manager layout; install via Git URL with `?path=Packages/com.adapty.unity-sdk`.
+- Migrated the SDK to a Unity Package Manager layout; install via Git URL with `?path=/Packages/com.adapty.unity-sdk`.
 - Updated native SDK dependencies and the cross-platform contract to 3.17.2 (iOS and Android).
