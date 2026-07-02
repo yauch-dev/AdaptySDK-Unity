@@ -4,7 +4,7 @@
   "displayName": "Adapty Unity SDK",
   "description": "Unity SDK for Adapty in-app purchases, subscriptions, paywalls, and onboarding flows.",
   "_upm": {
-    "changelog": "### Changed\n\n- Updated native SDK dependencies and cross-platform contract to 3.17.2."
+    "changelog": "### Added\n\n- `AdaptyProfile.AppliedAttributionSources` — attribution sources applied to the profile (e.g. Apple Search Ads), available for segmentation.\n- `AdaptyUIUserAction.OpenIn` — for `OpenUrl` actions, indicates whether the link should open in an in-app or external browser.\n\n### Changed\n\n- Migrated the SDK to a Unity Package Manager layout; install via Git URL with `?path=Packages/com.adapty.unity-sdk`.\n- Updated native SDK dependencies and the cross-platform contract to 3.17.2 (iOS and Android)."
   },
   "peerDependencies": {
     "com.google.external-dependency-manager": "1.2.187"
